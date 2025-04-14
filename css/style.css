@@ -1,0 +1,665 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/img-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px 0;
+}
+
+.navbar-brand img.logo {
+    max-height: 70px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    color: #f0f0f0;
+}
+
+/* Header Arrow */
+.header-arrow {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-arrow-img {
+    width: 100%;
+    max-width: 800px;
+    transform: translateX(-100%);
+    animation: slideIn 1.5s ease forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Divisão Laranja */
+.orange-divider {
+    height: 3px;
+    background-color: #F6520C;
+    width: 75%;
+    margin-left: 0;
+    position: relative;
+    z-index: 3;
+}
+
+/* Seção de Projetos */
+.projects-section {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.projects-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #0470AB;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.projects-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #F6520C;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
+
+/* Banner Rotativo */
+#projectCarousel {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#projectCarousel .carousel-item img {
+    border-radius: 20px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#projectCarousel .carousel-control-prev,
+#projectCarousel .carousel-control-next {
+    width: 5%;
+}
+
+/* Seção Tecnologia */
+.technology-section {
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/img-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.technology-content {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    max-width: 800px;
+    margin-left: 50px;
+}
+
+.technology-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #F6520C;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: slideInFromLeft 1s ease forwards;
+}
+
+.technology-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: slideInFromLeft 1s ease forwards 0.3s;
+}
+
+.technology-text strong {
+    font-weight: 800;
+    color: #0470AB;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.technology-text strong:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 5px 15px rgba(4, 112, 171, 0.5);
+}
+
+.about-button {
+    display: inline-block;
+    background-color: #F6520C;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(246, 82, 12, 0.3);
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: slideInFromLeft 1s ease forwards 0.6s;
+}
+
+.about-button:hover {
+    background-color: #e04a0a;
+    transform: translateY(-5px);
+    color: white;
+    box-shadow: 0 8px 20px rgba(246, 82, 12, 0.5);
+}
+
+/* Seção de Produtos */
+.products-section {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.products-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #0470AB;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.products-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #F6520C;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards 0.3s;
+}
+
+.products-row {
+    margin-bottom: 30px;
+}
+
+.product-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.product-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.product-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.product-image:hover img {
+    transform: scale(1.05);
+}
+
+.view-more-button {
+    display: inline-block;
+    background-color: #F6520C;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(246, 82, 12, 0.3);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards 1s;
+}
+
+.view-more-button:hover {
+    background-color: #e04a0a;
+    transform: translateY(-5px);
+    color: white;
+    box-shadow: 0 8px 20px rgba(246, 82, 12, 0.5);
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Seção CTA */
+.cta-section {
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/img-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #F6520C;
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.cta-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards 0.3s;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #F6520C;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(246, 82, 12, 0.3);
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards 0.6s;
+}
+
+.cta-button:hover {
+    background-color: #e04a0a;
+    transform: translateY(-5px);
+    color: white;
+    box-shadow: 0 8px 20px rgba(246, 82, 12, 0.5);
+}
+
+/* Seção de Clientes */
+.clients-section {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.clients-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #0470AB;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.clients-image {
+    max-width: 800px;
+    margin: 0 auto;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards 0.3s;
+}
+
+.clients-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.clients-image img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding-top: 80px;
+}
+
+.footer-top {
+    padding-bottom: 50px;
+}
+
+.footer-widget {
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    color: #b3b3b3;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.footer-social .social-icon:hover {
+    background-color: #F6520C;
+    transform: translateY(-3px);
+}
+
+.footer-title {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #F6520C;
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    color: #b3b3b3;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-contact li i {
+    color: #F6520C;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a i {
+    color: #F6520C;
+    font-size: 0.8rem;
+}
+
+.footer-links a:hover {
+    color: #F6520C;
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    background-color: #111111;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright, .developer {
+    color: #b3b3b3;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.developer {
+    text-align: right;
+}
+
+.developer i {
+    color: #F6520C;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .social-icons {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .nav-link {
+        margin: 10px 0;
+    }
+    
+    .orange-divider {
+        width: 100%;
+    }
+    
+    .projects-title {
+        font-size: 2rem;
+    }
+    
+    #projectCarousel .carousel-item img {
+        height: 300px;
+    }
+    
+    .technology-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .technology-title {
+        font-size: 2rem;
+    }
+    
+    .technology-text {
+        font-size: 1.1rem;
+    }
+    
+    .products-title {
+        font-size: 2rem;
+    }
+    
+    .product-image img {
+        height: 200px;
+    }
+    
+    .cta-title {
+        font-size: 2.2rem;
+    }
+    
+    .cta-text {
+        font-size: 1.2rem;
+    }
+    
+    .clients-title {
+        font-size: 2rem;
+    }
+    
+    .footer-widget {
+        text-align: center;
+    }
+    
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-contact li, .footer-links a {
+        justify-content: center;
+    }
+    
+    .copyright, .developer {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+} 

@@ -1,0 +1,546 @@
+/* Estilos específicos para a página Sobre Nós */
+
+/* Header Menor */
+.header-small {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-small .logo {
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.header-small .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.header-small .nav-link:hover,
+.header-small .nav-link.active {
+    color: #ff6b00;
+}
+
+.header-small .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-small .social-icon {
+    color: #333;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.header-small .social-icon:hover {
+    color: #ff6b00;
+}
+
+/* Título da Página */
+.page-title {
+    padding: 120px 0 60px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.page-title h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #333;
+    margin: 0;
+}
+
+/* Seção Sobre Nós */
+.about-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.about-content {
+    padding-right: 30px;
+}
+
+.about-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #ff6b00;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.about-stats {
+    display: flex;
+    gap: 30px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ff6b00;
+    margin-bottom: 10px;
+}
+
+.stat-text {
+    font-size: 16px;
+    color: #666;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Nossa História */
+.history-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.timeline-horizontal {
+    position: relative;
+    padding: 40px 0;
+}
+
+.timeline-horizontal::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6b00;
+    transform: translateY(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #ff6b00;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.timeline-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.timeline-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.timeline-text {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+/* Seção Responsáveis */
+.team-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.member-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.member-position {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.member-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.member-social a {
+    color: #333;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.member-social a:hover {
+    color: #ff6b00;
+}
+
+/* Seção Entrega */
+.delivery-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.delivery-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.delivery-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.delivery-text .highlight {
+    color: #ff6b00;
+    font-weight: 600;
+}
+
+/* Seção Atuação */
+.actuation-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.actuation-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.actuation-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Seção Conexões */
+.connections-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.connections-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.connections-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.connections-text .highlight {
+    color: #ff6b00;
+    font-weight: 600;
+}
+
+/* Seção Clientes */
+.clients-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.clients-image {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clients-gallery {
+    margin-top: 50px;
+}
+
+.client-logo {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+    transform: translateY(-5px);
+}
+
+.client-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Seção Vídeo */
+.video-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 80px 0 0;
+}
+
+.footer-widget {
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ff6b00;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-contact li i {
+    color: #ff6b00;
+    margin-right: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff6b00;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .page-title h1 {
+        font-size: 36px;
+    }
+
+    .about-title,
+    .section-title {
+        font-size: 30px;
+    }
+
+    .about-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .about-stats {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .timeline-horizontal::before {
+        display: none;
+    }
+
+    .timeline-item {
+        margin-bottom: 0;
+    }
+
+    .timeline-dot {
+        display: none;
+    }
+
+    .timeline-content {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-title {
+        padding: 100px 0 40px;
+    }
+
+    .page-title h1 {
+        font-size: 30px;
+    }
+
+    .about-title,
+    .section-title {
+        font-size: 24px;
+    }
+
+    .about-text,
+    .delivery-text,
+    .actuation-text,
+    .connections-text {
+        font-size: 16px;
+    }
+
+    .stat-number {
+        font-size: 30px;
+    }
+
+    .stat-text {
+        font-size: 14px;
+    }
+
+    .member-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .member-name {
+        font-size: 20px;
+    }
+
+    .member-position {
+        font-size: 14px;
+    }
+} 
