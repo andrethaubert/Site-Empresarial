@@ -4,321 +4,244 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós - IBA</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sobre-nos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS específico para a página Sobre Nós -->
+    <link rel="stylesheet" href="css/sobre-nos.css">
 </head>
 <body>
-    <!-- Header Menor -->
-    <header class="header-small">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" alt="IBA Logo" class="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="sobre-nos.html">Sobre Nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#produtos">Produtos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#contato">Contato</a>
-                        </li>
-                    </ul>
-                    <div class="social-icons ms-3">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+    <header class="header-container">
+        <div class="header-content">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="Logo" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre-nos.html">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="linhas.html">Linhas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                        </ul>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
+            </nav>
+            <div class="header-title-container">
+                <h1 class="header-title">Sobre Nós</h1>
+                <p class="header-subtitle">Conheça a história e os valores da IBA, uma empresa comprometida com a excelência e inovação no setor de galvanoplastia.</p>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <!-- Título da Página -->
-    <div class="page-title">
-        <div class="container">
-            <h1>Sobre Nós</h1>
-        </div>
-    </div>
+    <!-- Divisão laranja -->
+    <div class="orange-divider"></div>
 
-    <!-- Seção Sobre Nós -->
-    <section class="about-section">
+    <section class="quem-somos py-5">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="about-content">
-                        <h2 class="about-title">SOBRE NÓS</h2>
-                        <div class="about-divider"></div>
-                        <p class="about-text">
-                            A IBA é uma empresa especializada em automação industrial, com mais de 20 anos de experiência no mercado. Nossa missão é oferecer soluções tecnológicas inovadoras que aumentam a eficiência e produtividade dos nossos clientes.
-                        </p>
-                        <div class="about-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">20+</div>
-                                <div class="stat-text">Anos de Experiência</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">500+</div>
-                                <div class="stat-text">Clientes Satisfeitos</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">1000+</div>
-                                <div class="stat-text">Projetos Entregues</div>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="titulo-azul mb-4">QUEM SOMOS</h2>
+                    <p class="texto-sobre">
+                        Na IBA, acreditamos que <span class="destaque-laranja">tecnologia</span> e <span class="destaque-laranja">confiança</span> caminham juntas. Não entregamos apenas produtos, mas soluções completas que integram engenharia, experiência de campo e um compromisso real com o sucesso do cliente.
+                        <br><br>
+                        Cada projeto começa com escuta, passa por análise técnica detalhada e termina com um equipamento robusto, funcional e pensado para durar. Nos orgulhamos de construir relações de longo prazo, baseadas em transparência, agilidade e suporte contínuo.
+                    </p>
                 </div>
                 <div class="col-lg-6">
-                    <div class="about-image">
-                        <img src="img/sobre-nos.jpg" alt="Sobre a IBA">
-                    </div>
+                    <img src="img/img-1.jpg" alt="Sobre Nós" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Nossa História -->
-    <section class="history-section">
+    <section class="entrega py-5">
         <div class="container">
-            <h2 class="section-title">Nossa História</h2>
-            <div class="timeline-horizontal">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">2003</h3>
-                        <p class="timeline-text">Fundação da IBA com foco em automação industrial.</p>
-                    </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="img/img-1.jpg" alt="Entrega" class="img-fluid">
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">2008</h3>
-                        <p class="timeline-text">Expansão para novos mercados e tecnologias.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">2013</h3>
-                        <p class="timeline-text">Celebração de 10 anos com mais de 200 projetos.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">2018</h3>
-                        <p class="timeline-text">Inauguração da nova sede e centro de inovação.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">2023</h3>
-                        <p class="timeline-text">20 anos de excelência e inovação no mercado.</p>
-                    </div>
+                <div class="col-lg-6">
+                    <h2 class="titulo-azul text-end mb-4">DO PROJETO À ENTREGA</h2>
+                    <p class="texto-sobre text-end">
+                        Na IBA, cada projeto começa com uma escuta técnica qualificada. Entendemos as <span class="destaque-laranja">necessidades do cliente</span> para desenvolver soluções sob medida. Com equipe especializada e materiais de alta durabilidade, fabricamos equipamentos robustos e confiáveis. A instalação é feita com precisão, e o suporte continua após a entrega, garantindo pleno funcionamento e satisfação. Mais que produtos, entregamos <span class="destaque-laranja">confiança, resultado e parceria de longo prazo</span>.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Responsáveis -->
-    <section class="team-section">
+    <section class="atuacao py-5">
         <div class="container">
-            <h2 class="section-title">Responsáveis</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="titulo-azul mb-4">ONDE ATUAMOS?</h2>
+                    <p class="texto-sobre">
+                        Atendemos clientes em todo o território nacional, com foco especial nos polos industriais do Sul e Sudeste do Brasil. Nosso suporte técnico está <span class="destaque-laranja">preparado</span> para responder com <span class="destaque-laranja">agilidade</span>, seja presencialmente ou remotamente, oferecendo o suporte que a sua empresa precisa.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <i class="fas fa-globe-americas atuacao-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="conexoes py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center">
+                    <i class="fas fa-handshake conexoes-icon"></i>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="titulo-azul text-end mb-4">CONEXÕES QUE CONSTROEM</h2>
+                    <p class="texto-sobre text-end">
+                        De microempresas a grandes indústrias, a IBA atende empresas de diversos portes e segmentos. Nosso <span class="destaque-laranja">diferencial</span> está em nos adaptar à realidade de cada cliente, sem abrir mão da performance e da <span class="destaque-laranja">qualidade</span> que sempre entregamos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="frase-efeito py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="frase-texto">"Construindo o futuro da indústria com <span class="destaque-laranja">tecnologia</span>, <span class="destaque-laranja">inovação</span> e <span class="destaque-laranja">compromisso</span> com a excelência."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider left"></div>
+
+    <section class="valores py-5">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="img/team-1.jpg" alt="Responsável Técnico">
-                        </div>
-                        <div class="member-info">
-                            <h3 class="member-name">João Silva</h3>
-                            <p class="member-position">Responsável Técnico</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
+                <div class="col-md-4">
+                    <div class="valor-item text-center">
+                        <i class="fas fa-bullseye valor-icon"></i>
+                        <h3 class="valor-titulo">Nossa Missão</h3>
+                        <p class="valor-texto">Entregar equipamentos galvânicos com <span class="destaque-laranja">alta confiabilidade</span>, <span class="destaque-laranja">segurança</span> e <span class="destaque-laranja">eficiência</span>, fortalecendo a indústria brasileira.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="img/team-2.jpg" alt="Gerente de Projetos">
-                        </div>
-                        <div class="member-info">
-                            <h3 class="member-name">Maria Santos</h3>
-                            <p class="member-position">Gerente de Projetos</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
+                <div class="col-md-4">
+                    <div class="valor-item text-center">
+                        <i class="fas fa-eye valor-icon"></i>
+                        <h3 class="valor-titulo">Nossa Visão</h3>
+                        <p class="valor-texto">Ser <span class="destaque-laranja">referência nacional</span> em tecnologia e confiabilidade no setor de galvanoplastia.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="img/team-3.jpg" alt="Diretor Comercial">
-                        </div>
-                        <div class="member-info">
-                            <h3 class="member-name">Pedro Oliveira</h3>
-                            <p class="member-position">Diretor Comercial</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="img/team-4.jpg" alt="CEO">
-                        </div>
-                        <div class="member-info">
-                            <h3 class="member-name">Ana Costa</h3>
-                            <p class="member-position">CEO</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
+                <div class="col-md-4">
+                    <div class="valor-item text-center">
+                        <i class="fas fa-briefcase valor-icon"></i>
+                        <h3 class="valor-titulo">Nossos Valores</h3>
+                        <p class="valor-texto"><span class="destaque-laranja">Comprometimento</span> com o cliente, <span class="destaque-laranja">excelência técnica</span>, <span class="destaque-laranja">transparência</span> dos processos, e construção de <span class="destaque-laranja">parcerias sólidas</span> e duradouras.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Entrega -->
-    <section class="delivery-section">
-        <div class="container">
-            <div class="delivery-content">
-                <p class="delivery-text">
-                    Nossa abordagem para projetos é baseada em <span class="highlight">inovação</span> e <span class="highlight">excelência</span>. Cada projeto é único e desenvolvido com foco nas necessidades específicas do cliente, garantindo resultados que superam expectativas.
-                </p>
-            </div>
-        </div>
-    </section>
+    <div class="section-divider right"></div>
 
-    <!-- Seção Atuação -->
-    <section class="actuation-section">
+    <section class="clientes py-5">
         <div class="container">
-            <div class="actuation-content">
-                <p class="actuation-text">
-                    Atuamos em todo o território nacional, com atendimento personalizado e suporte técnico especializado. Nossa equipe está sempre pronta para atender às necessidades dos nossos clientes, independentemente da localização.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Conexões -->
-    <section class="connections-section">
-        <div class="container">
-            <div class="connections-content">
-                <p class="connections-text">
-                    Mantemos conexões constantes com nossos clientes, adaptando nossas soluções às mudanças do mercado. Nossa <span class="highlight">flexibilidade</span> e <span class="highlight">compromisso</span> nos permitem evoluir junto com as necessidades do setor.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Clientes -->
-    <section class="clients-section">
-        <div class="container">
-            <h2 class="section-title">Nossos Clientes</h2>
-            <div class="clients-image">
-                <img src="img/clientes.png" alt="Nossos Clientes">
-            </div>
-            <div class="clients-gallery">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="client-logo">
-                            <img src="img/cliente-1.png" alt="Cliente 1">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="client-logo">
-                            <img src="img/cliente-2.png" alt="Cliente 2">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="client-logo">
-                            <img src="img/cliente-3.png" alt="Cliente 3">
-                        </div>
-                    </div>
+            <h2 class="clientes-titulo">Alguns de Nossos Clientes</h2>
+            <p class="clientes-subtitulo">Orgulhamo-nos de trabalhar com empresas de diversos segmentos, construindo relações duradouras baseadas na confiança e na excelência de nossos produtos e serviços.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <img src="img/clientes.png" alt="Nossos Clientes" class="clientes-imagem">
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Seção Vídeo Institucional -->
-    <section class="video-section">
-        <div class="container">
-            <div class="video-container">
-                <iframe width="100%" height="500" src="https://www.youtube.com/embed/SEU_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <!-- Botão de chamada para contato -->
+            <div class="contato-cta">
+                <a href="#" class="contato-btn">Solicite um Orçamento <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="footer-widget">
-                        <img src="img/logo.png" alt="IBA Logo" class="footer-logo">
-                        <p class="footer-text">
-                            Soluções em automação industrial para aumentar a eficiência e produtividade do seu negócio.
-                        </p>
-                        <div class="footer-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <img src="img/logo.png" alt="Logo" class="footer-logo">
+                            <p class="footer-text">Transformando a indústria com tecnologia e inovação. Soluções personalizadas para sua linha de produção.</p>
+                            <div class="footer-social">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-title">Contato</h3>
+                            <ul class="footer-contact">
+                                <li><i class="fas fa-map-marker-alt"></i> Endereço da empresa, Cidade - Estado</li>
+                                <li><i class="fas fa-phone"></i> (00) 0000-0000</li>
+                                <li><i class="fas fa-envelope"></i> contato@iba.com.br</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-title">Links Rápidos</h3>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class="fas fa-chevron-right"></i> Início</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i> Sobre Nós</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i> Produtos</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i> Contato</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="footer-widget">
-                        <h3 class="footer-title">Contato</h3>
-                        <ul class="footer-contact">
-                            <li><i class="fas fa-map-marker-alt"></i> Rua Example, 123 - São Paulo, SP</li>
-                            <li><i class="fas fa-phone"></i> (11) 1234-5678</li>
-                            <li><i class="fas fa-envelope"></i> contato@iba.com.br</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-widget">
-                        <h3 class="footer-title">Links Rápidos</h3>
-                        <ul class="footer-links">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="sobre-nos.html">Sobre Nós</a></li>
-                            <li><a href="index.html#produtos">Produtos</a></li>
-                            <li><a href="index.html#contato">Contato</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 IBA. Todos os direitos reservados.</p>
-                <p>Desenvolvido por IBA</p>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2024 IBA. Todos os direitos reservados.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="developer">Desenvolvido por André Haubert</p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html> 

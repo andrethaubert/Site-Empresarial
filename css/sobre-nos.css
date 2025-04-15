@@ -543,4 +543,976 @@
     .member-position {
         font-size: 14px;
     }
+}
+
+/* Estilos para a seção Quem Somos */
+.quem-somos {
+    background-color: #ffffff;
+}
+
+.quem-somos img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.quem-somos img:hover {
+    transform: scale(1.02);
+}
+
+/* Estilos para a seção Entrega */
+.entrega {
+    background-color: #ffffff;
+}
+
+.entrega img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.entrega img:hover {
+    transform: scale(1.02);
+}
+
+.entrega .titulo-azul {
+    text-align: right;
+}
+
+.entrega .texto-sobre {
+    text-align: right;
+}
+
+/* Estilos para a seção Valores */
+.valores {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.valor-item {
+    padding: 40px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.valor-icon {
+    font-size: 3.5rem;
+    color: #0066cc;
+    margin-bottom: 30px;
+}
+
+.valor-titulo {
+    color: #0066cc;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.valor-texto {
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.valor-texto .destaque-laranja {
+    color: #ff6600;
+    font-weight: 800;
+}
+
+/* Estilos para a seção Atuação */
+.atuacao {
+    background-color: #ffffff;
+}
+
+.atuacao-icon {
+    font-size: 12rem;
+    color: #0066cc;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+}
+
+.atuacao-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para a seção Conexões */
+.conexoes {
+    background-color: #ffffff;
+}
+
+.conexoes-icon {
+    font-size: 12rem;
+    color: #0066cc;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+}
+
+.conexoes-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para a frase de efeito */
+.frase-efeito {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.frase-texto {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.frase-texto .destaque-laranja {
+    color: #ff6600;
+    font-weight: 800;
+}
+
+/* Estilos para a mini-divisão */
+.mini-divider {
+    height: 3px;
+    background-color: #ff6600;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Estilos para a seção de clientes */
+.clientes {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.clientes-titulo {
+    color: #0066cc;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.clientes-subtitulo {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clientes-imagem {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.clientes-imagem:hover {
+    transform: scale(1.02);
+}
+
+/* Estilos para o divisor de seção */
+.section-divider {
+    height: 5px;
+    background-color: #0066cc;
+    width: 100%;
+    margin: 60px 0;
+    position: relative;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 991px) {
+    .quem-somos .col-lg-6:last-child,
+    .entrega .col-lg-6:first-child {
+        margin-top: 2rem;
+    }
+    
+    .titulo-azul {
+        font-size: 2rem;
+    }
+    
+    .texto-sobre {
+        font-size: 1rem;
+    }
+    
+    .valor-item {
+        padding: 30px;
+    }
+    
+    .valor-icon {
+        font-size: 3rem;
+    }
+    
+    .valor-titulo {
+        font-size: 1.8rem;
+    }
+    
+    .valor-texto {
+        font-size: 1.2rem;
+    }
+    
+    .atuacao-icon,
+    .conexoes-icon {
+        font-size: 8rem;
+        margin: 20px 0;
+    }
+    
+    .frase-texto {
+        font-size: 1.6rem;
+    }
+    
+    .mini-divider {
+        width: 80%;
+    }
+    
+    .clientes-titulo {
+        font-size: 2rem;
+    }
+    
+    .clientes-subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .quem-somos img,
+    .entrega img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .quem-somos img,
+    .entrega img {
+        height: 200px;
+    }
+}
+
+/* Estilos para o header da página Sobre Nós */
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/carrosel-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.header-title-container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header-title {
+    color: #F6520C;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    position: relative;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Removendo o efeito de brilho do título */
+/* .header-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    20% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+} */
+
+.header-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #0470AB;
+    transition: width 0.4s ease;
+    animation: lineGrow 2s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes lineGrow {
+    to {
+        width: 100%;
+    }
+}
+
+.header-title:hover {
+    transform: translateY(-5px);
+    color: #ff7a33;
+}
+
+.header-title:hover::after {
+    width: 100%;
+}
+
+.header-subtitle {
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.header-subtitle:hover {
+    transform: scale(1.02);
+}
+
+/* Estilos para títulos e textos */
+.titulo-azul {
+    color: #0470AB;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.titulo-azul::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #F6520C;
+    transition: width 0.3s ease;
+    animation: lineGrow 2s forwards;
+    animation-delay: 0.5s;
+}
+
+.titulo-azul:hover {
+    transform: translateY(-3px);
+}
+
+.titulo-azul:hover::after {
+    width: 100%;
+}
+
+.texto-sobre {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.texto-sobre:hover {
+    transform: translateY(-2px);
+}
+
+.destaque-laranja {
+    color: #F6520C;
+    font-weight: 800;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0 2px;
+}
+
+/* Substituindo o sublinhado por um efeito mais discreto */
+.destaque-laranja::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0470AB;
+    transition: width 0.3s ease;
+    opacity: 0.5;
+}
+
+/* Animação sequencial para os destaques - agora com efeito mais discreto */
+.quem-somos .destaque-laranja:nth-child(1)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1s;
+}
+
+.quem-somos .destaque-laranja:nth-child(2)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.entrega .destaque-laranja:nth-child(1)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1s;
+}
+
+.entrega .destaque-laranja:nth-child(2)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.atuacao .destaque-laranja:nth-child(1)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1s;
+}
+
+.atuacao .destaque-laranja:nth-child(2)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.conexoes .destaque-laranja:nth-child(1)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1s;
+}
+
+.conexoes .destaque-laranja:nth-child(2)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.valores .destaque-laranja:nth-child(1)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1s;
+}
+
+.valores .destaque-laranja:nth-child(2)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.valores .destaque-laranja:nth-child(3)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 2s;
+}
+
+.valores .destaque-laranja:nth-child(4)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 2.5s;
+}
+
+.valores .destaque-laranja:nth-child(5)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 3s;
+}
+
+.valores .destaque-laranja:nth-child(6)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 3.5s;
+}
+
+.valores .destaque-laranja:nth-child(7)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 4s;
+}
+
+.frase-efeito .destaque-laranja:nth-child(1)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1s;
+}
+
+.frase-efeito .destaque-laranja:nth-child(2)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.frase-efeito .destaque-laranja:nth-child(3)::after {
+    animation: lineGrow 1.5s forwards;
+    animation-delay: 2s;
+}
+
+.destaque-laranja:hover {
+    transform: translateY(-2px);
+    color: #ff7a33;
+}
+
+.destaque-laranja:hover::after {
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* Divisores de conteúdo */
+.section-divider {
+    height: 3px;
+    background-color: #F6520C;
+    width: 300px;
+    margin: 60px 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.section-divider.left {
+    margin-left: 0;
+}
+
+.section-divider.right {
+    margin-left: auto;
+    margin-right: 0;
+    width: 400px;
+}
+
+.section-divider:hover {
+    width: 350px;
+    background-color: #0470AB;
+}
+
+.section-divider.right:hover {
+    width: 450px;
+}
+
+/* Mini divisor */
+.mini-divider {
+    height: 2px;
+    background-color: #F6520C;
+    width: 150px;
+    margin: 40px auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.mini-divider:hover {
+    width: 200px;
+    background-color: #0470AB;
+}
+
+/* Ajuste da seção de valores */
+.valores {
+    padding: 60px 0;
+}
+
+.valor-item {
+    padding: 30px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.valor-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.valor-icon {
+    font-size: 2.5rem;
+    color: #0470AB;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.valor-item:hover .valor-icon {
+    transform: scale(1.1);
+    color: #F6520C;
+}
+
+.valor-titulo {
+    color: #0470AB;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.valor-item:hover .valor-titulo {
+    color: #F6520C;
+}
+
+.valor-texto {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Ajuste da seção de clientes */
+.clientes {
+    padding: 60px 0;
+}
+
+.clientes-titulo {
+    color: #0470AB;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.clientes-titulo::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #F6520C;
+    transition: width 0.3s ease;
+    animation: lineGrow 2s forwards;
+    animation-delay: 0.5s;
+}
+
+.clientes-titulo:hover {
+    transform: translateY(-3px);
+}
+
+.clientes-titulo:hover::after {
+    width: 100%;
+}
+
+.clientes-subtitulo {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease;
+}
+
+.clientes-subtitulo:hover {
+    transform: translateY(-2px);
+}
+
+.clientes-imagem {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.5s ease;
+}
+
+.clientes-imagem:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Botão de chamada para contato */
+.contato-cta {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contato-btn {
+    display: inline-block;
+    background-color: #F6520C;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(246, 82, 12, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.contato-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0470AB;
+    transition: width 0.5s ease;
+    z-index: -1;
+}
+
+.contato-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(246, 82, 12, 0.4);
+    color: white;
+}
+
+.contato-btn:hover::before {
+    width: 100%;
+}
+
+.contato-btn i {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contato-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Ajustes para as seções de atuação e conexões */
+.atuacao, .conexoes {
+    padding: 40px 0;
+}
+
+.atuacao-icon, .conexoes-icon {
+    font-size: 10rem;
+    color: #0470AB;
+    margin: 0;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.atuacao-icon:hover, .conexoes-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    color: #F6520C;
+}
+
+/* Ajuste para a seção quem somos */
+.quem-somos {
+    padding-top: 80px;
+}
+
+.quem-somos .row {
+    align-items: center;
+}
+
+.quem-somos img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.quem-somos img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Ajuste para a seção entrega */
+.entrega {
+    padding: 40px 0;
+}
+
+.entrega img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.entrega img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Ajuste para o texto do projeto à entrega */
+.entrega .texto-sobre {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* Ajuste para a frase de efeito */
+.frase-efeito {
+    padding: 40px 0;
+}
+
+.frase-texto {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    transition: all 0.3s ease;
+}
+
+.frase-texto:hover {
+    transform: translateY(-3px);
+}
+
+/* Divisor maior entre frase de efeito e valores */
+.frase-efeito + .section-divider {
+    width: 40%;
+    margin: 60px 0 60px 0;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .header-title {
+        font-size: 2.8rem;
+    }
+    
+    .titulo-azul {
+        font-size: 2rem;
+    }
+    
+    .texto-sobre {
+        font-size: 1.1rem;
+    }
+    
+    .section-divider {
+        width: 200px;
+    }
+    
+    .section-divider.right {
+        width: 300px;
+    }
+    
+    .quem-somos {
+        padding-top: 60px;
+    }
+    
+    .quem-somos img,
+    .entrega img {
+        height: 250px;
+    }
+    
+    .valor-item {
+        padding: 20px;
+    }
+    
+    .valor-icon {
+        font-size: 2rem;
+    }
+    
+    .valor-titulo {
+        font-size: 1.5rem;
+    }
+    
+    .valor-texto {
+        font-size: 1rem;
+    }
+    
+    .atuacao-icon, 
+    .conexoes-icon {
+        font-size: 8rem;
+    }
+    
+    .frase-texto {
+        font-size: 1.5rem;
+    }
+    
+    .frase-efeito + .section-divider {
+        width: 30%;
+    }
+    
+    .contato-btn {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-title {
+        font-size: 2.2rem;
+    }
+    
+    .titulo-azul {
+        font-size: 1.8rem;
+    }
+    
+    .texto-sobre {
+        font-size: 1rem;
+    }
+    
+    .section-divider {
+        width: 150px;
+    }
+    
+    .section-divider.right {
+        width: 200px;
+    }
+    
+    .quem-somos img,
+    .entrega img {
+        height: 200px;
+    }
+    
+    .valor-item {
+        padding: 15px;
+    }
+    
+    .valor-icon {
+        font-size: 1.8rem;
+    }
+    
+    .valor-titulo {
+        font-size: 1.3rem;
+    }
+    
+    .valor-texto {
+        font-size: 0.9rem;
+    }
+    
+    .atuacao-icon, 
+    .conexoes-icon {
+        font-size: 6rem;
+    }
+    
+    .frase-texto {
+        font-size: 1.3rem;
+    }
+    
+    .frase-efeito + .section-divider {
+        width: 25%;
+    }
+    
+    .contato-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 } 
