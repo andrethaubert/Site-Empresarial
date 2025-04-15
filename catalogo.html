@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos - IBA</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-content">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="Logo" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre-nos.html">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="linhas.html">Linhas e Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/iba.galvanicos/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/iba.ind/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/ibaequipgalvanicos/posts/?feedView=all" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-arrow">
+                <img src="img/header.png" alt="Header Arrow" class="header-arrow-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- Divisão laranja -->
+    <div class="orange-divider"></div>
+
+    <!-- Seção de Catálogo -->
+    <section class="catalog-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="catalog-title">Catálogo de Produtos</h2>
+                <p class="catalog-subtitle">Explore nossa linha completa de soluções industriais</p>
+            </div>
+
+            <!-- Produtos do Catálogo -->
+            <div class="row products-row">
+                <!-- Produto 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Linha Galvânica" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto1.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Linha Galvânica Automática</h3>
+                            <p class="product-description">Sistema completo de automação para galvanoplastia com controle digital de processos, inclui tanques, transportadores e painel de controle.</p>
+                            <button class="add-to-quote-btn" data-id="1" data-name="Linha Galvânica Automática">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Tanque de Processo" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto2.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Tanque de Processo Industrial</h3>
+                            <p class="product-description">Tanque industrial reforçado com revestimento anti-corrosivo, ideal para processos químicos agressivos com sistema de aquecimento integrado.</p>
+                            <button class="add-to-quote-btn" data-id="2" data-name="Tanque de Processo Industrial">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Sistema de Filtração" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto3.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sistema de Filtração Avançado</h3>
+                            <p class="product-description">Sistema completo de filtração para processos industriais com múltiplos estágios e elementos filtrantes de alta durabilidade.</p>
+                            <button class="add-to-quote-btn" data-id="3" data-name="Sistema de Filtração Avançado">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Retificador Industrial" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto4.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Retificador Industrial de Alta Potência</h3>
+                            <p class="product-description">Retificador de última geração com controle digital, ideal para processos de eletrodeposição com monitoramento em tempo real.</p>
+                            <button class="add-to-quote-btn" data-id="4" data-name="Retificador Industrial de Alta Potência">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Estação de Tratamento" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto5.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Estação de Tratamento de Efluentes</h3>
+                            <p class="product-description">Sistema completo para tratamento de efluentes industriais, atendendo aos requisitos ambientais com monitoramento automatizado.</p>
+                            <button class="add-to-quote-btn" data-id="5" data-name="Estação de Tratamento de Efluentes">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Automação PLC" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto6.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sistema de Automação PLC</h3>
+                            <p class="product-description">Solução completa de automação industrial com controle lógico programável, interface homem-máquina e integração com sistemas supervisórios.</p>
+                            <button class="add-to-quote-btn" data-id="6" data-name="Sistema de Automação PLC">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Produto 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Estação de Tratamento" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto5.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Estação de Tratamento de Efluentes</h3>
+                            <p class="product-description">Sistema completo para tratamento de efluentes industriais, atendendo aos requisitos ambientais com monitoramento automatizado.</p>
+                            <button class="add-to-quote-btn" data-id="5" data-name="Estação de Tratamento de Efluentes">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Estação de Tratamento" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto5.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Estação de Tratamento de Efluentes</h3>
+                            <p class="product-description">Sistema completo para tratamento de efluentes industriais, atendendo aos requisitos ambientais com monitoramento automatizado.</p>
+                            <button class="add-to-quote-btn" data-id="5" data-name="Estação de Tratamento de Efluentes">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Estação de Tratamento" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto5.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Estação de Tratamento de Efluentes</h3>
+                            <p class="product-description">Sistema completo para tratamento de efluentes industriais, atendendo aos requisitos ambientais com monitoramento automatizado.</p>
+                            <button class="add-to-quote-btn" data-id="5" data-name="Estação de Tratamento de Efluentes">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Estação de Tratamento" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto5.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Estação de Tratamento de Efluentes</h3>
+                            <p class="product-description">Sistema completo para tratamento de efluentes industriais, atendendo aos requisitos ambientais com monitoramento automatizado.</p>
+                            <button class="add-to-quote-btn" data-id="5" data-name="Estação de Tratamento de Efluentes">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Estação de Tratamento" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto5.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Estação de Tratamento de Efluentes</h3>
+                            <p class="product-description">Sistema completo para tratamento de efluentes industriais, atendendo aos requisitos ambientais com monitoramento automatizado.</p>
+                            <button class="add-to-quote-btn" data-id="5" data-name="Estação de Tratamento de Efluentes">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/carrosel-1.jpg" alt="Estação de Tratamento" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="pdfs/produto5.pdf" target="_blank" class="view-pdf-btn">
+                                    <i class="fas fa-file-pdf"></i> Ver detalhes
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Estação de Tratamento de Efluentes</h3>
+                            <p class="product-description">Sistema completo para tratamento de efluentes industriais, atendendo aos requisitos ambientais com monitoramento automatizado.</p>
+                            <button class="add-to-quote-btn" data-id="5" data-name="Estação de Tratamento de Efluentes">
+                                <i class="fas fa-plus-circle"></i> Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Painel lateral de orçamento -->
+    <div class="quote-sidebar" id="quoteSidebar">
+        <div class="quote-header">
+            <h3><i class="fas fa-clipboard-list"></i> Seu Orçamento</h3>
+            <button class="close-sidebar" id="closeSidebar"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="quote-body">
+            <div class="selected-products" id="selectedProducts">
+                <p class="empty-list-message">Nenhum produto selecionado</p>
+                <!-- Os produtos selecionados serão adicionados aqui dinamicamente -->
+            </div>
+
+            <div class="quote-form">
+                <h4>Preencha seus dados</h4>
+                <form id="quoteForm">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Nome</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> Telefone</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company"><i class="fas fa-building"></i> Empresa</label>
+                        <input type="text" class="form-control" id="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Observações</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="quote-submit-btn" id="submitQuote">
+                        <i class="fas fa-paper-plane"></i> Enviar Orçamento
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão flutuante para abrir o painel de orçamento -->
+    <button class="float-quote-btn" id="openQuoteSidebar">
+        <span class="quote-count" id="quoteCount">0</span>
+        <i class="fas fa-shopping-cart"></i>
+    </button>
+
+    <!-- Overlay para quando o painel lateral estiver aberto -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <img src="img/logo.png" alt="Logo" class="footer-logo">
+                            <p class="footer-text">Transformando a indústria com tecnologia e inovação. Soluções personalizadas para sua linha de produção.</p>
+                            <div class="footer-social">
+                                <a href="https://www.facebook.com/iba.galvanicos/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/iba.ind/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/ibaequipgalvanicos/posts/?feedView=all" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-title">Contato</h3>
+                            <ul class="footer-contact">
+                                <li><i class="fas fa-map-marker-alt"></i>Rod. RS 239, 5461 - Vila Irma, Sapiranga - RS, 93805-798</li>
+                                <li><i class="fas fa-phone"></i>(51) 3523-4210</li>
+                                <li><i class="fas fa-envelope"></i> sac@iba.ind.br</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-title">Links Rápidos</h3>
+                            <ul class="footer-links">
+                                <li><a href="index.html"><i class="fas fa-chevron-right"></i> Início</a></li>
+                                <li><a href="sobre-nos.html"><i class="fas fa-chevron-right"></i> Sobre Nós</a></li>
+                                <li><a href="linhas.html"><i class="fas fa-chevron-right"></i> <span data-translate="footer-linhas">Linhas e Projetos</span></a></li>
+                                <li><a href="catalogo.html"><i class="fas fa-chevron-right"></i> Catálogo</a></li>
+                                <li><a href="contato.html"><i class="fas fa-chevron-right"></i> Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2024 IBA. Todos os direitos reservados.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="developer">Desenvolvido por @sowlmkt | André TH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de sucesso -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-check-circle text-success"></i> Orçamento Enviado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Seu pedido de orçamento foi enviado com sucesso!</p>
+                    <p>Em breve nossa equipe entrará em contato.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+</html>
