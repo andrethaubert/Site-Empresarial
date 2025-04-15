@@ -25,7 +25,7 @@ const translations = {
         'footer-endereco': 'Endereço da empresa, Cidade - Estado',
         'footer-telefone': '(00) 0000-0000',
         'footer-email': 'contato@iba.com.br',
-        'footer-links': 'Links Rápidos',
+        'footer-links': 'Links Rápidos:',
         'footer-inicio': 'Início',
         'footer-sobre': 'Sobre Nós',
         'footer-produtos': 'Produtos',
