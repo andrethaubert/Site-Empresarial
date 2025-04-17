@@ -1,0 +1,502 @@
+/* Estilos específicos para a página Contato */
+
+/* Header */
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/carrosel-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.header-title-container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header-title {
+    color: #F6520C;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    position: relative;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.header-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #0470AB;
+    transition: width 0.4s ease;
+    animation: lineGrow 2s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes lineGrow {
+    to {
+        width: 100%;
+    }
+}
+
+.header-title:hover {
+    transform: translateY(-5px);
+    color: #ff7a33;
+}
+
+.header-title:hover::after {
+    width: 100%;
+}
+
+.header-subtitle {
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.header-subtitle:hover {
+    transform: scale(1.02);
+}
+
+/* Divisão laranja */
+.orange-divider {
+    height: 5px;
+    background-color: #F6520C;
+    width: 100%;
+}
+
+/* Títulos e textos */
+.titulo-azul {
+    color: #0470AB;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.titulo-azul::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #F6520C;
+    transition: width 0.3s ease;
+    animation: lineGrow 2s forwards;
+    animation-delay: 0.5s;
+}
+
+.titulo-azul:hover {
+    transform: translateY(-3px);
+}
+
+.titulo-azul:hover::after {
+    width: 100%;
+}
+
+/* Cards de contato */
+.contato-cards {
+    margin-bottom: 50px;
+}
+
+.contato-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contato-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contato-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #F6520C;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
+}
+
+.contato-card:hover::before {
+    transform: translateY(0);
+}
+
+.contato-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #0470AB;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.contato-card:hover .contato-icon-wrapper {
+    background-color: #F6520C;
+    transform: rotateY(180deg);
+}
+
+.contato-icon {
+    color: #ffffff;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.contato-card:hover .contato-icon {
+    transform: rotateY(180deg);
+}
+
+.contato-card-titulo {
+    color: #0470AB;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.contato-card:hover .contato-card-titulo {
+    color: #F6520C;
+}
+
+.contato-card-texto {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.contato-link {
+    display: inline-block;
+    color: #F6520C;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.contato-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0470AB;
+    transition: width 0.3s ease;
+}
+
+.contato-link:hover {
+    color: #0470AB;
+}
+
+.contato-link:hover::after {
+    width: 100%;
+}
+
+.contato-link i {
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+.contato-link:hover i {
+    transform: translateX(5px);
+}
+
+/* Mapa */
+.mapa-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.mapa-container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.mapa-wrapper {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Cards de redes sociais */
+.redes-cards {
+    margin-bottom: 50px;
+}
+
+.rede-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.rede-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #f8f9fa;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.rede-card:hover::before {
+    height: 100%;
+}
+
+.rede-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.rede-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #0470AB;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.rede-card:hover .rede-icon-wrapper {
+    background-color: #F6520C;
+    transform: scale(1.1);
+}
+
+.rede-icon {
+    color: #ffffff;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+.rede-card:hover .rede-icon {
+    transform: scale(1.1);
+}
+
+.rede-card-titulo {
+    color: #0470AB;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.rede-card:hover .rede-card-titulo {
+    color: #F6520C;
+}
+
+.rede-card-texto {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.rede-link {
+    display: inline-block;
+    color: #F6520C;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.rede-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0470AB;
+    transition: width 0.3s ease;
+}
+
+.rede-link:hover {
+    color: #0470AB;
+}
+
+.rede-link:hover::after {
+    width: 100%;
+}
+
+.rede-link i {
+    margin-left: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.rede-link:hover i {
+    transform: rotate(45deg);
+}
+
+/* Seção de Horário de Atendimento */
+.horario-atendimento {
+    background-color: #f8f9fa;
+}
+
+.horario-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.horario-container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.horario-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.horario-icon {
+    font-size: 8rem;
+    color: #0470AB;
+    transition: all 0.5s ease;
+}
+
+.horario-container:hover .horario-icon {
+    color: #F6520C;
+    transform: rotate(360deg);
+}
+
+.horario-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.horario-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.horario-list li:hover {
+    transform: translateX(10px);
+    border-bottom-color: #F6520C;
+}
+
+.horario-list .dia {
+    font-weight: 700;
+    color: #0470AB;
+}
+
+.horario-list .hora {
+    font-weight: 600;
+    color: #333;
+}
+
+.horario-texto {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Seção CTA */
+.contato-cta-section {
+    background-color: #ffffff;
+}
+
+.cta-titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #f75f00;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+
+
+.cta-texto {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #0470AB;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
